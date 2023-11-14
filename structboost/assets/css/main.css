@@ -33,3 +33,55 @@ header nav ul li a{
 header nav ul li a:hover{
     opacity: 0.7;
 }
+
+.s-hero{
+    width: 100%;
+    padding-top: 112px;
+    height: 162px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.s-hero .text{
+    width: 100%;
+    max-width: 719px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    position: relative;
+}
+
+.s-hero .text h1{
+    font-weight: 600;
+    position: relative;
+    letter-spacing: -1.68px;
+}
+
+.s-hero .text h1::before{
+    content: ' ';
+    width: 100%;
+    max-width: 600px;
+    height: 22px;
+    background: url("../imgs/rabisco.svg") no-repeat center center;
+    position: absolute;
+    bottom: 0;
+    left: 39px;
+    z-index: -1;
+}
+
+.s-hero .text p{
+    max-width: 556px;
+    letter-spacing: -0.54px;
+    margin: 24px auto 32px;
+    color: var(--gray-300);
+}
+
+.s-hero .text .arrow{
+    position: absolute;
+    left: 55px;
+    bottom: 17px;
+}
+
+::after
