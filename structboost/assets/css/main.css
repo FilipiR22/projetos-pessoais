@@ -95,7 +95,7 @@ header nav ul li a:hover{
     bottom: 17px;
 }
 
-.s-digital{
+.s-digital,.s-art-front{
     padding-top: 128px;
 }
 
@@ -111,4 +111,43 @@ header nav ul li a:hover{
     justify-content:space-between;
     border-bottom: 1px solid var(--gray-800);
     padding-bottom: 128px;
+}
+
+.s-art-front .title-text p{
+    max-width: 452px;
+    color: var(--gray-600);
+    margin-top: 16px;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.54px;
+
+}
+
+.s-art-front .title-text .left h3{
+    letter-spacing: -1.2px;
+    font-weight: 600;
+}
+
+.s-art-front .title-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.s-art-front .title-text .left{
+    max-width: 539px;
+}
+
+.s-art-front .title-text .right{
+    max-width: 429px;
+}
+
+.s-art-front .all{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 32px;
+}
+
+.s-art-front .all .card-post:first-child{
+    grid-column: span 2;
 }
