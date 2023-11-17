@@ -23,6 +23,10 @@ header nav ul{
     gap: 40px;
 }
 
+.menu-mobile{
+    display: none;
+}
+
 header nav ul li a{
     color: var(--gray-100);
     font-size: 16px;
@@ -78,7 +82,7 @@ header nav ul li a:hover{
     background: url("../imgs/rabisco.svg") no-repeat center center;
     position: absolute;
     bottom: 0;
-    left: 39px;
+    left:39px;
     z-index: -1;
 }
 
@@ -228,4 +232,61 @@ footer .copy{
 
 footer .copy strong{
     font-weight: 600;
+}
+
+@media (max-width:560px){
+    picture{
+        align-self: flex-end;
+    }
+    .s-hero{
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+    .s-hero .text p{
+        max-width: 325px;
+        margin: 8px auto 24px;
+        font-size: 16px;
+        letter-spacing: -0.48px;
+    }
+    .s-hero .btn-primary.lg{
+        padding: 16px 24px;
+    }
+    .s-hero .text{
+        max-width: 374px;
+    }
+}
+
+@media (max-width:991px){
+    .s-hero .text h1{
+        max-width: 490px;
+        margin: 0 auto;
+        font-size: 40px;
+    }
+    .s-hero .text h1::before{
+        left: 0;
+        bottom: -4px;
+        background-size: 100%;
+    }
+}
+
+@media (max-width:768px){
+    header nav{
+        display: none;
+    }
+    .s-hero .text .arrow{
+        display: none;
+    }
+
+    header{
+        height: auto;
+    }
+
+    header .container{
+        padding: 24px 27px;
+    }
+
+    .menu-mobile{
+        display: inline-block;
+    }
 }
