@@ -253,6 +253,13 @@ footer .copy strong{
     .s-digital ul h6{
         font-size: 22px;
     }
+    .s-art-front .all .card-post:first-child,
+    .s-art-front .all .card-post:nth-child(2){
+        grid-column: span 3;
+    }
+    footer .main-area .right{
+        max-width: 620px;
+    }
 }
 
 @media (max-width:991px){
@@ -265,6 +272,56 @@ footer .copy strong{
         left: 0;
         bottom: -4px;
         background-size: 100%;
+    }
+    .s-art-front .all .card-post:first-child,.s-art-front .all .card-post:nth-child(2){
+        grid-column: initial;
+    }
+    .s-art-front .all{
+        grid-template-columns: 1fr;
+    }
+    .s-art-front{
+        padding: 80px 0;
+    }
+    .s-art-front .all{
+        gap: 16px;
+    }
+    .s-art-front .title-text {
+        flex-direction: column;
+    }
+
+    .s-art-front .title-text{
+        max-width: 100%;
+        text-align: center;
+        padding: 0 8px;
+        margin-bottom: 56px;
+    }
+    .s-art-front .title-text h3{
+        max-width: 227px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 28px;
+        letter-spacing: -0.84px;
+    }
+    .s-art-front .title-text .right{
+        display: none;
+    }
+    footer .main-area{
+        flex-direction: column;
+        gap: 48px;
+        margin-bottom: 48px;
+    }
+    footer .left {
+        max-width: 100%;
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    footer .left img{
+        margin: 0 auto 24px;
+    }
+    footer .right{
+        margin: 0 auto;
     }
 }
 
@@ -289,6 +346,9 @@ footer .copy strong{
     }
     .s-digital h3{
         font-size: 28px;
+    }
+    .s-newsletter{
+        margin-top: 0;
     }
 }
 
@@ -321,5 +381,35 @@ footer .copy strong{
     }
     .s-digital{
         padding-top: 80px;
+    }
+    .s-newsletter h2{
+        font-size: 40px;
+    }
+    footer .right,.item-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .right{
+        gap: 48px;
+    }
+    footer .right h6{
+        text-align: center;
+    }
+    
+    footer .right .list:last-child ul{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    footer .right .list:last-child{
+    width: 100%;
+    }
+    footer .right .list .item-list{
+        flex-direction: initial;
+        justify-content: center;
+    }
+    .copy{
+        text-align: center;
+        font-size: 14px;
     }
 }

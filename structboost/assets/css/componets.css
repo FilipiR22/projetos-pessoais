@@ -89,3 +89,18 @@
 .card-post .text p{
     font-size: 1.6rem;
 }
+
+@media (max-width:768px){
+    .card-post{
+        padding: 16px;
+    }
+    .card-post .image{
+        margin-bottom: 56px;
+    }
+    .card-post h6{
+        font-size: 18px;
+    }
+    .card-post p{
+        font-size: 14px;
+    }
+}
