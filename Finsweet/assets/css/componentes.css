@@ -41,10 +41,15 @@ body{
     justify-content: center;
 }
 
+.card-post:hover .image img{
+    transform: scale(1.1);
+}
+
 .card-post .image img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: .3s ease;
 }
 
 .card-post .text{
